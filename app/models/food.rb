@@ -6,7 +6,7 @@ class Food < ApplicationRecord
 
   validates :name, presence: true
 
-  validates :measurement_unit, presence: true
+  validates :measuring_unit, presence: true
   validates :price, numericality: { is_decimal: true }
   validates :quantity, numericality: { only_decimal: true, greater_than_or_equal_to: 0 }
 end
