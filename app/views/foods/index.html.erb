@@ -4,10 +4,12 @@
 
 <div id="foods">
   <% @foods.each do |food| %>
-    <%= render food %>
-    <p>
-      <%= link_to "Show this food", food %>
-    </p>
+    <div class="food-item">
+      <%= render food %>
+      <p>
+        <%= link_to "Show this food", food %>
+      </p>
+    </div>
   <% end %>
 </div>
 
