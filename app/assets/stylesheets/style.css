@@ -1,0 +1,132 @@
+/* app/assets/stylesheets/foods.css */
+
+/* Apply basic styles to the page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  color: #333;
+}
+
+#foods {
+  margin-top: 20px;
+}
+
+.food-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.form-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.form-container input[type="text"],
+.form-container textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-container {
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.back-link {
+  margin-top: 10px;
+}
+
+.food-item h3 {
+  margin: 0;
+  color: #555;
+}
+
+.food-item p {
+  margin-top: 5px;
+  color: #777;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.shop-list-container {
+  margin: 20px;
+}
+
+.shop-list-container h1 {
+  color: #333;
+}
+
+.shop-list-container h2 {
+  color: #555;
+}
+
+.shop-list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.shop-list-table th,
+.shop-list-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.shop-list-table th {
+  font-weight: bold;
+}
+
+.shop-list-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.shop-list-table tbody tr:hover {
+  background-color: #ebebeb;
+}
