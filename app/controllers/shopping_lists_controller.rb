@@ -1,5 +1,6 @@
 class ShoppingListsController < ApplicationController
   def index
+    params[:recipe_id]
     @user = current_user
     @recipes = Recipe.where(user_id: @user.id)
     recipe_ids = @recipes.pluck(:id)
