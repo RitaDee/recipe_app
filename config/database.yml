@@ -29,15 +29,14 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  username: admin
-
+  username: postgres
   # The password associated with the postgres role (username).
-  password: rudy5678
+  password: John1v14!@
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  host: localhost
+  # host: localhost
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
@@ -58,9 +57,9 @@ development:
 test:
   <<: *default
   database: recipe_app_test
-  username: admin
-  password: rudy5678
-  host: localhost
+  username: postgres
+  password: John1v14!@
+  # host: localhost
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -84,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: recipe_app_production
-  username: recipe_app_development
-  password: <%= ENV["RECIPE_APP_DEVELOPMENT_DATABASE_PASSWORD"] %>
+  database: data_blog_production
+  username: postgres
+  password: <%= ENV["DATA_BLOG_DATABASE_PASSWORD"] %>
