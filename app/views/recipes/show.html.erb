@@ -1,10 +1,57 @@
 <p style="color: green"><%= notice %></p>
-
-<%= render @recipe %>
-
+<%# <%= render 'recipe_details'%> 
+<div class="recipe-list-container">
+<div class="recipe-detail">
 <div>
-  <%= link_to "Edit this recipe", edit_recipe_path(@recipe) %> |
-  <%= link_to "Back to recipes", recipes_path %>
+<p>
+    <strong>Name:</strong>
+    <%= @recipe.name %>
+  </p>
+  <p>
+    <strong>Preparation time:</strong>
+    <%= @recipe.preparation_time %>
+  </p>
+  <p>
+    <strong>Cooking time:</strong>
+    <%= @recipe.cooking_time %>
+  </p>
+  <p>
+    Status:
+        <% if @recipe.public %>
+        <span class="badge text-bg-warning p-2 px-4">Public</span>
+        <% else %>
+          <span class="badge text-bg-secondary p-2 px-4">Private</span>
+      <% end %>
+  </p>
 
-  <%= button_to "Destroy this recipe", @recipe, method: :delete %>
+  <p>
+  Steps go here...
+  </p>
+</div>
+<%= button_to "Make it #{@recipe.public ? 'private' : 'public'}", recipe_path(@recipe.id), method: :patch %>
+</div>
+  <%= link_to "Generate Shopping Lists", shopping_lists_path %>
+  <%= link_to "Add ingredients", new_recipe_recipe_food_path(@recipe) %>
+  <div>
+    <table class="recipe-list-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Value $</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @recipe_foods.each do |item| %>
+          <tr>
+            <td><%= item.food.name %></td>
+            <td><%= item.food.quantity %></td>
+            <td><%= item.food.price %></td>
+            <td class="actions" style="display: flex; gap: 0.5rem; justify-content: center;"><%= button_to "Modify" %> <%= button_to "Remove", [@recipe, item], method: :delete %></td> 
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 </div>
