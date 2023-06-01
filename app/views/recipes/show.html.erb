@@ -1,6 +1,35 @@
 <p style="color: green"><%= notice %></p>
-<%= render @recipe %>
+<%# <%= render 'recipe_details'%> 
 <div class="recipe-list-container">
+<div class="recipe-detail">
+<div>
+<p>
+    <strong>Name:</strong>
+    <%= @recipe.name %>
+  </p>
+  <p>
+    <strong>Preparation time:</strong>
+    <%= @recipe.preparation_time %>
+  </p>
+  <p>
+    <strong>Cooking time:</strong>
+    <%= @recipe.cooking_time %>
+  </p>
+  <p>
+    Status:
+        <% if @recipe.public %>
+        <span class="badge text-bg-warning p-2 px-4">Public</span>
+        <% else %>
+          <span class="badge text-bg-secondary p-2 px-4">Private</span>
+      <% end %>
+  </p>
+
+  <p>
+  Steps go here...
+  </p>
+</div>
+<%= button_to "Make it #{@recipe.public ? 'private' : 'public'}", recipe_path(@recipe.id), method: :patch %>
+</div>
   <%= link_to "Generate Shopping Lists", shopping_lists_path %>
   <%= link_to "Add ingredients", new_recipe_recipe_food_path(@recipe) %>
   <div>

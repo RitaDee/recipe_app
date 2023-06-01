@@ -183,6 +183,53 @@ a:hover {
   background-color: #e2e8f0;
 }
 
+.public_recipes {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 40%;
+  padding: 0 10px;
+  gap: 170px;
+  border: 1px solid #000;
+}
+
+.public-recipes-container {
+  display: grid;
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.login-title {
+  margin: 0 40%;
+  margin-top: 7%;
+}
+
+.recipe_card {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 40%;
+  padding: 0 10px;
+  gap: 170px;
+  border: 1px solid #000;
+}
+
+.recipes {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.title {
+  margin: 0 45%;
+  margin-top: 7%;
+  margin-bottom: 27px;
+}
+
+.link {
+  margin: 0 45%;
+}
+
 .main-menu {
   clear: both;
   width: 90%;
@@ -284,4 +331,10 @@ a:hover {
 .actions {
   display: flex;
   gap: 0.5rem;
+}
+
+.recipe-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

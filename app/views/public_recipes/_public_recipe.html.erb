@@ -1,6 +1,6 @@
     <div class="public_recipes">
             <div class='recipe_name'>
-                <h2><%= recipe.name %></h1>
+                <h2><%= link_to recipe.name, recipe_path(recipe.id) %></h1>
                 <h5>by: <%= recipe.user.name %></h2>
             </div>
             <div class="recipe_total">
