@@ -1,0 +1,11 @@
+    <div class="public_recipes">
+            <div class='recipe_name'>
+                <h2><%= recipe.name %></h1>
+                <h5>by: <%= recipe.user.name %></h2>
+            </div>
+            <div class="recipe_total">
+                <%# <li><%= recipe.description.truncate(30) </li> %>
+                <h5>Total food items:<%= recipe.foods.count %></h5>
+               <h5>Total price: <span class=""> $<%= recipe.recipe_foods.includes(:food).map {|r| r.food.price.to_i * r.quantity.to_i }.sum %></span></h3>
+            </div>
+</div>
