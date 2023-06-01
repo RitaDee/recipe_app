@@ -183,63 +183,63 @@ a:hover {
   background-color: #e2e8f0;
 }
 
- .main-menu {
-   clear: both;
-   width: 90%;
-   margin: 5rem auto;
-   border: solid 1px #353535;
-   padding: 1rem;
- }
+.main-menu {
+  clear: both;
+  width: 90%;
+  margin: 5rem auto;
+  border: solid 1px #353535;
+  padding: 1rem;
+}
 
- .main-menu-item {
-   display: flex;
-   justify-content: space-between;
-   margin: 3rem 0;
-   word-wrap: break-word;
- }
+.main-menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+  word-wrap: break-word;
+}
 
- .main-menu-item h3 {
-   margin: 0;
- }
+.main-menu-item h3 {
+  margin: 0;
+}
 
- .main-menu-item a {
-   text-decoration: none;
-   color: #337ab7;
- }
+.nav-bar h2,
+.nav-items a {
+  color: antiquewhite;
+}
 
- .main-menu-item a:hover {
-   color: #E2E8F0;
- }
+.nav-items a {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.5rem;
+  border: solid 1px antiquewhite;
+}
 
- .nav-bar {
-   width: 100%;
-   padding: 1rem;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-bottom: 2rem;
-   background: #353535;
- }
+.main-menu-item a {
+  text-decoration: none;
+  color: #337ab7;
+}
 
- .nav-bar h2,
- .nav-items a {
-   color: antiquewhite;
- }
+.main-menu-item a:hover {
+  color: #e2e8f0;
+}
 
- .nav-items a {
-   text-decoration: none;
-   font-weight: 700;
-   padding: 0.5rem;
-   border: solid 1px antiquewhite;
- }
+.nav-bar {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background: #353535;
+}
 
- .nav-menu {
-   width: 30%;
-   display: flex;
-   justify-content: space-around;
- }
+.nav-menu {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
 
- .recipe-list-container {
+.recipe-list-container {
   margin-top: 2rem;
 }
 
@@ -247,6 +247,14 @@ a:hover {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+}
+
+.recipe-list-table button {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  background-color: #337ab7;
+  color: #fff;
+  cursor: pointer;
 }
 
 .recipe-list-table th,
@@ -260,25 +268,17 @@ a:hover {
   font-weight: bold;
 }
 
+.recipe-list-table td button + button {
+  display: flex;
+  margin-left: 0.5rem;
+}
+
 .recipe-list-table td {
   text-align: center;
 }
 
-.recipe-list-table button {
-  padding: 0.25rem 0.5rem;
-  border: none;
-  background-color: #337ab7;
-  color: #fff;
-  cursor: pointer;
-}
-
 .recipe-list-table button:hover {
   background-color: #23527c;
-}
-
-.recipe-list-table td button + button {
-  display: flex;
-  margin-left: 0.5rem;
 }
 
 .actions {

@@ -6,7 +6,7 @@ class RecipesController < ApplicationController
     # @recipes = Recipe.all
     @public_recipes = Recipe.where(public: true)
     @user_recipes = []
-    @user_recipes = Recipe.where(user_id: current_user.id) 
+    @user_recipes = Recipe.where(user_id: current_user.id)
     @recipes = @public_recipes + @user_recipes
   end
 

@@ -24,7 +24,7 @@ class ShoppingListsController < ApplicationController
     #   @shopping_list << { name: name, qty: needed, price: price }
     # end
 
-    @total_items = @shopping_list.count 
+    @total_items = @shopping_list.count
     @total_price = @shopping_list.sum { |item| item[:price] }
   end
 end
