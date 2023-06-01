@@ -9,7 +9,8 @@
         <tr>
           <th>Item</th>
           <th>Quantity</th>
-          <th>Price $</th>
+          <th>Value $</th>
+          <th>Actions</th>
         </tr>
       </thead>
       <tbody>
@@ -18,11 +19,10 @@
             <td><%= item.food.name %></td>
             <td><%= item.food.quantity %></td>
             <td><%= item.food.price %></td>
+            <td class="actions" style="display: flex; gap: 0.5rem; justify-content: center;"><%= button_to "Modify" %> <%= button_to "Remove", [@recipe, item], method: :delete %></td> 
           </tr>
         <% end %>
       </tbody>
     </table>
   </div>
 </div>
-
-<%= @recipe_foods.count %>

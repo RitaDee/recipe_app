@@ -1,5 +1,5 @@
 class RecipeFoodsController < ApplicationController
-  before_action :set_recipe_food, only: %i[show edit update destroy]
+  before_action :set_recipe, only: %i[show edit update destroy]
 
   # GET /recipe_foods or /recipe_foods.json
   def index
@@ -31,6 +31,16 @@ class RecipeFoodsController < ApplicationController
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @recipe_food.errors, status: :unprocessable_entity }
       end
+    end
+  end
+
+  def destroy
+    recipe_food = RecipeFood.find(params[:id])
+    recipe_food.destroy
+
+    respond_to do |format|
+      format.html { redirect_to recipe_path(recipe_food.recipe), notice: 'Recipe was successfully destroyed.' }
+      format.json { head :no_content }
     end
   end
 
