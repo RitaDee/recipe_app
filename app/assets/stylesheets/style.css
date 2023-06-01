@@ -182,3 +182,59 @@ a:hover {
 .delete-btn input[type="submit"]:hover {
   background-color: #e2e8f0;
 }
+
+ .main-menu {
+   clear: both;
+   width: 90%;
+   margin: 5rem auto;
+   border: solid 1px #353535;
+   padding: 1rem;
+ }
+
+ .main-menu-item {
+   display: flex;
+   justify-content: space-between;
+   margin: 3rem 0;
+   word-wrap: break-word;
+ }
+
+ .main-menu-item h3 {
+   margin: 0;
+ }
+
+ .main-menu-item a {
+   text-decoration: none;
+   color: #337ab7;
+ }
+
+ .main-menu-item a:hover {
+   color: #E2E8F0;
+ }
+
+ .nav-bar {
+   width: 100%;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 2rem;
+   background: #353535;
+ }
+
+ .nav-bar h2,
+ .nav-items a {
+   color: antiquewhite;
+ }
+
+ .nav-items a {
+   text-decoration: none;
+   font-weight: 700;
+   padding: 0.5rem;
+   border: solid 1px antiquewhite;
+ }
+
+ .nav-menu {
+   width: 30%;
+   display: flex;
+   justify-content: space-around;
+ }

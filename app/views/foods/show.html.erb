@@ -1,5 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @food %>
+<% @foods.each do |food| %>
 
+  <%= food.name %>
 
+<%end%>
