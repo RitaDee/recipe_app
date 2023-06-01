@@ -138,7 +138,7 @@ a:hover {
 .add-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #F7FAFC;
+  background-color: #f7fafc;
   color: #333;
   text-decoration: none;
   border: 1px solid #333;
@@ -146,7 +146,7 @@ a:hover {
 }
 
 .add-btn:hover {
-  background-color: #E2E8F0;
+  background-color: #e2e8f0;
 }
 
 .custom-table {
@@ -156,7 +156,7 @@ a:hover {
 
 .table-header {
   padding: 14px;
-  background-color: #F7FAFC;
+  background-color: #f7fafc;
   border-bottom: 1px solid #333;
   text-align: left;
 }
@@ -172,7 +172,7 @@ a:hover {
 
 .delete-btn input[type="submit"] {
   padding: 5px 10px;
-  background-color: #F7FAFC;
+  background-color: #f7fafc;
   color: #333;
   text-decoration: none;
   border: 1px solid #333;
@@ -180,5 +180,5 @@ a:hover {
 }
 
 .delete-btn input[type="submit"]:hover {
-  background-color: #E2E8F0;
+  background-color: #e2e8f0;
 }
