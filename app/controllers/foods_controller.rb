@@ -1,5 +1,5 @@
 class FoodsController < ApplicationController
-  before_action :set_food, only: %i[show edit update destroy]
+  before_action :authenticate_user!
 
   # GET /foods or /foods.json
   def index
@@ -7,7 +7,9 @@ class FoodsController < ApplicationController
   end
 
   # GET /foods/1 or /foods/1.json
-  def show; end
+  def show
+    @foods = Food.all
+  end
 
   # GET /foods/new
   def new

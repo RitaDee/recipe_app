@@ -130,3 +130,55 @@ a:hover {
 .shop-list-table tbody tr:hover {
   background-color: #ebebeb;
 }
+
+.notice {
+  color: green;
+}
+
+.add-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f7fafc;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.add-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  padding: 14px;
+  background-color: #f7fafc;
+  border-bottom: 1px solid #333;
+  text-align: left;
+}
+
+.table-cell {
+  padding: 14px;
+  border-bottom: 1px solid #333;
+}
+
+.delete-btn {
+  display: inline-block;
+}
+
+.delete-btn input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #f7fafc;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.delete-btn input[type="submit"]:hover {
+  background-color: #e2e8f0;
+}

@@ -1,14 +1,19 @@
-<p style="color: green"><%= notice %></p>
+<div>
+  <p class="current-user">logged as : <%= @user.name%></p>
+  <div class="main-menu">
+    <div class="main-menu-item">
+      <h3>Add food items</h3>
+      <h3><%= link_to "Food Items", new_food_path(user_id:@user.id) %></h3>
+    </div>
+    <div class="main-menu-item">
+      <h3>View your Recipes</h3>
+      <h3><%= link_to "Recipes", recipes_path(user_id:@user.id) %></h3>
+    </div>
+    
+    <div class="main-menu-item">
+      <h3>Create New Recipe</h3>
+      <h3><%= link_to "New Recipe", new_recipe_path(user_id:@user.id) %></h3>
+    </div>
 
-<h1>Users</h1>
-
-<div id="users">
-  <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
-  <% end %>
+  </div>
 </div>
-
-<%= link_to "New user", new_user_path %>
