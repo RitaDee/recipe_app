@@ -1,0 +1,10 @@
+<h1>Editing food</h1>
+
+<div class="form-container">
+  <%= render "form", food: @food %>
+</div>
+
+<div class="btn-container">
+  <%= link_to "Show this food", @food, class: "btn" %> |
+  <%= link_to "Back to foods", foods_path, class: "btn" %>
+</div>
