@@ -1,4 +1,5 @@
 class FoodsController < ApplicationController
+  before_action :set_food, only: :destroy
   before_action :authenticate_user!
 
   # GET /foods or /foods.json
