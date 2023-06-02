@@ -19,7 +19,9 @@
 
         <td class="table-cell">
           <div class="delete-btn">
-            <%= button_to 'Delete', food_path(food), method: :delete %>
+           <% if can? :destroy, food %>
+              <%= button_to 'Delete', food_path(food), method: :delete %>
+            <% end %>
           </div>
         </td>
       </tr>
