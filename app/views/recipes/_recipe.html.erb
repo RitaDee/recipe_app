@@ -4,8 +4,7 @@
   <strong><%= recipe.name %> </strong>
 </p>
 <p>
-  <%= link_to "Show this recipe", recipe %>
-</p>
+  <%= button_to 'Remove', recipe, method: :delete, style: 'color: blue;' %>
 </div>
 <div>
 <p>
