@@ -1,0 +1,28 @@
+<p class="notice"><%= notice %></p>
+
+<%= link_to "Add food", new_food_path, class: "add-btn" %>
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th class="table-header">Food</th>
+      <th class="table-header">Measurement Unit</th>
+      <th class="table-header">Unit Price</th>
+      <th class="table-header">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @foods.each do |food| %>
+      <tr>
+        <td class="table-cell"><%= food.name %></td>
+        <td class="table-cell"><%= food.measuring_unit %></td>
+        <td class="table-cell"><%= food.price %></td>
+
+        <td class="table-cell">
+          <div class="delete-btn">
+            <%= button_to 'Delete', food_path(food), method: :delete %>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

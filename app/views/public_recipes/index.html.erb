@@ -1,0 +1,6 @@
+<h1 class="login-title">Public Recipes</h1>
+<div class="public-recipes-container">
+    <% @recipes.each do |recipe| %>
+        <%= render 'public_recipe' , recipe: recipe %>
+    <% end %>
+</div>
