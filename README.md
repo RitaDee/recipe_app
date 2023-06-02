@@ -21,9 +21,6 @@
 
 # 📰 Recipe-App <a name="about-project"></a>
 
-### Live Demo <a name="live-demo"></a>
-
-
 ### Tech Stack <a name="tech-stack"></a>
 
 - <a href="https://www.ruby-lang.org/es/">ROR</a>
