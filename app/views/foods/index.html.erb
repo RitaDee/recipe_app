@@ -12,19 +12,21 @@
   </thead>
   <tbody>
     <% @foods.each do |food| %>
-      <tr>
-        <td class="table-cell"><%= food.name %></td>
-        <td class="table-cell"><%= food.measuring_unit %></td>
-        <td class="table-cell"><%= food.price %></td>
-
-        <td class="table-cell">
-          <div class="delete-btn">
-           <% if can? :destroy, food %>
-              <%= button_to 'Delete', food_path(food), method: :delete %>
-            <% end %>
-          </div>
-        </td>
-      </tr>
+      <% if can? :read, food %>
+        <tr>
+          <td class="table-cell"><%= food.name %></td>
+          <td class="table-cell"><%= food.measuring_unit %></td>
+          <td class="table-cell"><%= food.price %></td>
+          
+          <td class="table-cell">
+            <div class="delete-btn">
+              <% if can? :destroy, food %>
+                <%= button_to 'Delete', food_path(food), method: :delete %>
+              <% end %>
+            </div>
+          </td>
+        </tr>
+      <% end %>
     <% end %>
   </tbody>
 </table>
